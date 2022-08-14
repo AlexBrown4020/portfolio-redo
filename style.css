@@ -148,3 +148,7 @@ nav a {
 .name-word {
     margin: 5px;
 }
+
+.contact-link {
+  display: flex;
+}
