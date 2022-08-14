@@ -214,7 +214,7 @@ nav a {
   display: flex;
   flex-direction: column;
   max-width: 33%;
-  border: 2px solid blueviolet;
+  border: 4px solid black;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
@@ -224,6 +224,7 @@ nav a {
 .about-topic {
   display: flex;
   align-items: center;
+  padding: 2px;
 }
 
 @media screen and (max-width: 600px) {
