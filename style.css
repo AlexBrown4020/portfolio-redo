@@ -43,6 +43,7 @@ nav a {
   margin: 10px;
   border-radius: 2px;
   box-shadow: 2px 2px 2px rgb(164, 164, 164);
+  width: 90%;
 }
 
 #project-banner {
@@ -50,8 +51,8 @@ nav a {
   display: flex;
   background-color: black;
   color: white;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   box-shadow: 2px gray;
 }
 
@@ -183,12 +184,72 @@ nav a {
 #main-about {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   background-color: white;
+  border-radius: 2px;
+  margin: 10px;
+  width: 90%;
+}
+
+#about-banner {
+  display: flex;
+  justify-content: left;
+  background-color: black;
+  color: white;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+  padding: 10px;
 }
 
 .about-container {
   display: flex;
-  flex-direction: column;
-  margin: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: fit-content;
 }
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 33%;
+  border: 2px solid blueviolet;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.about-topic {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  #main-about {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #main-about {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    #about-container {
+      font-size: 10px;
+      margin: auto;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    #about-container {
+      font-size: 25px;
+      margin: auto;
+    }
+  }
