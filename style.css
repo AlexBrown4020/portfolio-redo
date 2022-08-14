@@ -45,6 +45,14 @@ nav a {
   box-shadow: 2px 2px 2px rgb(164, 164, 164);
 }
 
+#project-banner {
+  padding: 10px;
+  display: flex;
+  background-color: black;
+  box-shadow: 2px 2px 2px gray;
+  color: white;
+}
+
 #project-container {
     display:flex;
     flex-wrap: wrap;
