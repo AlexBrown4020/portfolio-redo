@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.html"
   },
   "dependencies": {
     "cloudinary-core": "^2.12.3"
