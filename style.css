@@ -64,8 +64,9 @@ nav {
   margin: 10px;
   border-radius: 2px;
   width: 90%;
-  color: white;
+  color: blueviolet;
   padding-top: 20%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #project-container {
@@ -190,12 +191,13 @@ nav {
 #contact-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-evenly
+
 }
 
 .contact-link {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px;
 }
 
@@ -209,6 +211,11 @@ nav {
 #main-contact {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  border-top: 2px white solid;
+  margin-top: 20%;
 }
 
 #contact-banner {
