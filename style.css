@@ -3,7 +3,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: gainsboro;
+    background-color: black;
 }
 
 nav {
@@ -12,26 +12,48 @@ nav {
     width: clamp(100%, 40%, 10%);
     background-color: black;
     box-shadow: 2px 2px 2px gray;
-    font-size:35px;
+    font-size:25px;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    align-items: center;
     width: 100%;
+    max-height: 50px;
 }
 
-nav a {
+#nav-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#nav-elements a {
     text-decoration: none;
     color: white;
-    padding: 4px;
+    margin-right: 40px;
+    font-size: 22px;
+}
+
+#developer-name {
+  color: violet;
+  display: flex;
+  margin-left: 30px;
+  font-size: 22px;
 }
 
 @media screen and (max-width: 600px) {
+    #developer-name p {
+      font-size: 14px;
+    }
+    #nav-elements a {
+      font-size: 14px;
+    }
     nav {
-      font-size: 10px;
+      justify-content: space-around;
     }
   }
 
   @media screen and (min-width: 601px) {
-    nav {
+    #nav-elements a {
       font-size: 35px;
     }
   }
@@ -88,23 +110,44 @@ nav a {
 
 #main-background {
     display: flex;
-    background-color: white;
     justify-content:space-between;
     align-items: center;
-    border-radius:5px;
-    box-shadow: 2px 2px 2px rgb(164, 164, 164);
+}
+
+#information {
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#information h1{
+  font-size: 55px;
+}
+
+#information p{
+  font-size: 28px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @media screen and (max-width: 600px) {
-  #main-background {
-    font-size: 10px;
+  #information h1 {
+    font-size: 18px;
     margin-top: 10px;
+  }
+  #information p {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  #my-image-container {
+    align-items:center;
+    margin-left: 0%;
   }
 }
 
 @media screen and (min-width: 601px) {
   #main-background {
     margin-top: 40px;
+    margin-left: 10%;
   }
 }
 
@@ -112,6 +155,10 @@ nav a {
     #information {
       font-size: 15px;
       margin: 10px;
+    }
+    #my-image {
+      margin-top: 40px;
+      min-height: 120px
     }
   }
 
@@ -125,17 +172,12 @@ nav a {
 #my-image {
   flex-shrink: 0;
   max-width: 100%;
-  max-height: 100%;
 }
 
 #my-image-container {
   width: 50%;
   float: right;
-}
-
-#developer-name {
-    display: flex;
-    align-items: center;
+  background: radial-gradient(closest-side, rgb(65, 65, 65), rgb(39, 39, 39), black);;
 }
 
 .name-word {
