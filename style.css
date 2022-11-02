@@ -11,19 +11,11 @@ nav {
     top: 0;
     width: clamp(100%, 40%, 10%);
     background-color: black;
-    box-shadow: 2px 2px 2px gray;
+    border-bottom: 2px white ridge;
     font-size:25px;
     display:flex;
-    justify-content:space-between;
-    align-items: center;
+    justify-content:space-around;
     width: 100%;
-    max-height: 50px;
-}
-
-#nav-elements {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 #nav-elements a {
@@ -33,22 +25,9 @@ nav {
     font-size: 22px;
 }
 
-#developer-name {
-  color: blueviolet;
-  display: flex;
-  margin-left: 30px;
-  font-size: 22px;
-}
-
 @media screen and (max-width: 600px) {
-    #developer-name p {
-      font-size: 14px;
-    }
     #nav-elements a {
       font-size: 14px;
-    }
-    nav {
-      justify-content: space-around;
     }
   }
 
@@ -64,7 +43,7 @@ nav {
   margin: 10px;
   border-radius: 2px;
   width: 90%;
-  color: blueviolet;
+  color: goldenrod;
   padding-top: 20%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -112,7 +91,7 @@ nav {
     align-items: center;
     animation: fadeIn 1s;
     border: 4px white ridge;
-    padding: 10px;
+    margin-top: 10%;
 }
 
 @keyframes fadeIn {
@@ -125,25 +104,15 @@ nav {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#information h1{
-  font-size: 55px;
-}
-
-#information p{
-  font-size: 28px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 @media screen and (max-width: 600px) {
   #information h1 {
     font-size: 18px;
     margin-top: 10px;
   }
   #information p {
-    font-size: 18px;
+    font-size: 28px;
     margin-top: 50px;
   }
-
   #my-image-container {
     align-items:center;
     margin-left: 0%;
@@ -152,14 +121,24 @@ nav {
 
 @media screen and (min-width: 601px) {
   #main-background {
-    margin-top: 10%;
+    margin-top: 20%;
+  }
+  #information {
+    padding: 10px;
+  }
+  #information h1 {
+    font-size: 55px;
+    margin-top: 10px;
+  }
+  #information p {
+    font-size: 32px;
+    margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
     #information {
       font-size: 15px;
-      margin: 10px;
     }
     #my-image {
       margin-top: 40%;
@@ -214,7 +193,7 @@ nav {
   flex-direction: column;
   width: 100%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: white;
+  color: goldenrod;
   border-top: 2px white solid;
   margin-top: 20%;
 }
@@ -222,6 +201,10 @@ nav {
 #contact-banner {
   display: flex;
   justify-content: center;
+}
+
+.contact-details {
+  color: white;
 }
 
 #main-about {
@@ -275,7 +258,7 @@ nav {
     font-size: 25px;
   }
   .about-title {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
