@@ -34,7 +34,7 @@ nav {
 }
 
 #developer-name {
-  color: violet;
+  color: blueviolet;
   display: flex;
   margin-left: 30px;
   font-size: 22px;
@@ -61,20 +61,17 @@ nav {
 #main-projects {
   display: flex;
   flex-direction: column;
-  background-color: white;
   margin: 10px;
   border-radius: 2px;
-  box-shadow: 2px 2px 2px rgb(164, 164, 164);
   width: 90%;
+  color: white;
+  padding-top: 20%;
 }
 
 #project-container {
     display:flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
     align-items: center;
     flex-direction: row;
 }
@@ -105,13 +102,19 @@ nav {
     max-height: 80px;
     max-width: 80px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 1px 1px 1px gray;
 }
 
 #main-background {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 #information {
@@ -146,7 +149,7 @@ nav {
 
 @media screen and (min-width: 601px) {
   #main-background {
-    margin-top: 40px;
+    margin-top: 5%;
     margin-left: 10%;
   }
 }
@@ -157,8 +160,8 @@ nav {
       margin: 10px;
     }
     #my-image {
-      margin-top: 40px;
-      min-height: 120px
+      margin-top: 40%;
+      min-height: 120px;
     }
   }
 
@@ -216,21 +219,18 @@ nav {
 #main-about {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 2px;
   margin: 10px;
-  width: 90%;
+  width: 100%;
+  background-color: black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  animation: fadeIn 2s;
 }
 
 .banner {
   background-color: black;
   color: white;
-  border-top-left-radius: 5px 5px;
-  border-top-right-radius: 5px 5px;
-}
-
-.about-title {
-  margin: 10px;
+  margin-left: 10%;
 }
 
 .about-container {
@@ -241,32 +241,46 @@ nav {
   max-width: fit-content;
 }
 
+.about-container h4 {
+  font-size: 36px;
+}
+
 .about-card {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
-  margin: 10px;
   align-items: center;
-  border-bottom: 2px solid black;
 }
 
 .about-topic {
   display: flex;
   align-items: center;
-  padding: 2px;
 }
 
 @media screen and (max-width: 600px) {
   #main-about {
-    font-size: 15px;
-    margin-top: 10px;
+    margin-top: 20%;
+  }
+  .about-card {
+    max-width: 60%;
+  }
+  .about-card h4{
+    font-size: 25px;
+  }
+  .about-title {
+    font-size: 25px;
   }
 }
 
 @media screen and (min-width: 601px) {
   #main-about {
-    margin-top: 40px;
     font-size: 30px;
+    margin-top: 20%;
+  }
+  .about-card {
+    max-width:40%;
+  }
+    .about-title {
+    font-size: 50px;
   }
 }
 
@@ -274,6 +288,9 @@ nav {
     #about-container {
       font-size: 10px;
       margin: auto;
+    }
+    .about-topic {
+      font-size: 20px;
     }
   }
 
