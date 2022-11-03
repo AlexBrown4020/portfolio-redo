@@ -25,6 +25,10 @@ nav {
     font-size: 22px;
 }
 
+#nav-elements :hover {
+  color: goldenrod;
+}
+
 @media screen and (max-width: 600px) {
     #nav-elements a {
       font-size: 14px;
