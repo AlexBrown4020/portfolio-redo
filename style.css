@@ -10,7 +10,7 @@ nav {
     position:fixed;
     top: 0;
     width: clamp(100%, 40%, 10%);
-    background-color: black;
+    background-color: rgb(62, 61, 61);
     border-bottom: 2px white ridge;
     font-size:25px;
     display:flex;
@@ -91,7 +91,6 @@ nav {
 
 #main-background {
     display: flex;
-    justify-content:space-between;
     align-items: center;
     animation: fadeIn 1s;
     margin-top: 10%;
@@ -124,10 +123,11 @@ nav {
 
 @media screen and (min-width: 601px) {
   #main-background {
-    margin-top: 20%;
+    margin-top: 10%;
   }
   #information {
-    padding: 10px;
+    font-size: 20px;
+    margin: auto;
   }
   #information h1 {
     font-size: 55px;
@@ -140,20 +140,22 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  #main-background {
+    margin-left: 10%;
+  }
+
     #information {
       font-size: 15px;
     }
     #my-image {
       margin-top: 40%;
       min-height: 120px;
+      min-width: 100%;
     }
   }
 
   @media screen and (min-width: 601px) {
-    #information {
-      font-size: 20px;
-      margin: auto;
-    }
+
   }
 
 #my-image {
