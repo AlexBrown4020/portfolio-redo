@@ -94,7 +94,6 @@ nav {
     justify-content:space-between;
     align-items: center;
     animation: fadeIn 1s;
-    border: 4px white ridge;
     margin-top: 10%;
 }
 
@@ -176,7 +175,6 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content:space-evenly
-
 }
 
 .contact-link {
@@ -219,7 +217,6 @@ nav {
   background-color: black;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
-  animation: fadeIn 2s;
 }
 
 .banner {
@@ -244,6 +241,18 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .about-topic {
