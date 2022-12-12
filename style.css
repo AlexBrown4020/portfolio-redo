@@ -105,27 +105,24 @@ nav {
 
 #information {
   color: white;
+  display: flex;
+  flex-direction:column;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items:flex-end;
 }
 
 @media screen and (max-width: 600px) {
   #information h1 {
     font-size: 18px;
     margin-top: 10px;
-  }
-  #information p {
-    font-size: 28px;
-    margin-top: 50px;
+    min-width: 40%;
   }
   #my-image-container {
     align-items:center;
     margin-left: 0%;
   }
     #main-background {
-    margin-left: 10%;
-  }
-  #information {
-    font-size: 15px;
+    min-width:50%
   }
   #my-image {
     margin-top: 40%;
