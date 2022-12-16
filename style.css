@@ -242,8 +242,6 @@ nav {
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
-  border: gray;
-  background-color: gainsboro;
 }
 
 .reveal.active{
