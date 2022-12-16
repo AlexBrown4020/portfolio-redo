@@ -79,12 +79,9 @@ nav {
     flex-direction: column;
     align-items: center;
     padding: 10px 20px;
-    margin: 15px;
     width: auto;
     text-align: center;
     max-width: 150px;
-    border: gray;
-    background-color: gainsboro;
 }
 
 .project-image {
@@ -245,6 +242,8 @@ nav {
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
+  border: gray;
+  background-color: gainsboro;
 }
 
 .reveal.active{
